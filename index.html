@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <!-- Reset.css -->
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css" />
+    <!-- Bootstrap-->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <script
+      type="text/javascript"
+      src="https://code.jquery.com/jquery-2.2.0.min.js"
+    ></script>
+    <!-- Game.js -->
+    <script type="text/javascript" src="assets/javascript/game.js"></script>
+
+    <!-- style.css -->
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+    <title>Crystals Collector</title>
+  </head>
+  <body>
+    <div class="bg">
+      <div class="header text-center">
+        <h1>Crystals Collector</h1>
+        <h2>RANDOM NUMBER:</h2>
+        <h2 id="target-number"></h2>
+      </div>
+
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-6 col-sm-6 col-md-3 col-lg-3 text-center">
+            <img
+              class="crystal"
+              id="crystal1"
+              src="assets/images/crystal1.png"
+              alt="Crystal 1"
+            />
+          </div>
+          <div class="col-xs-6 col-sm-6 col-md-3 col-lg-3 text-center">
+            <img
+              class="crystal"
+              id="crystal2"
+              src="assets/images/crystal2.png"
+              alt="Crystal 2"
+            />
+          </div>
+          <div class="col-xs-6 col-sm-6 col-md-3 col-lg-3 text-center">
+            <img
+              class="crystal"
+              id="crystal3"
+              src="assets/images/crystal3.png"
+              alt="Crystal 3"
+            />
+          </div>
+          <div class="col-xs-6 col-sm-6 col-md-3 col-lg-3 text-center">
+            <img
+              class="crystal"
+              id="crystal4"
+              src="assets/images/crystal4.png"
+              alt="Crystal 4"
+            />
+          </div>
+        </div>
+
+        <div class="row text-center">
+          <div class="col-lg-12 instructions">
+            <p>
+              Each crystal has a hidden value which is only revealed when
+              clicked. Each click will add the crystal value to your total
+              score. If your total score matches the random number, you Win!. If
+              your total score exceeds the random number it will count as a
+              loss.
+            </p>
+          </div>
+        </div>
+        <div class="row text-center">
+          <div class="col-lg-6 total">
+            <h3>TOTAL SCORE:</h3>
+            <h3 id="total-score"></h3>
+          </div>
+          <div class="col-lg-6 wins-loses">
+            <p class="score">WINS: <span id="wins"></span></p>
+            <p class="score">LOSSES: <span id="losses"></span></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

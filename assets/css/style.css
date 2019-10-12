@@ -1,0 +1,20 @@
+body h2 {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: rgb(63, 63, 63);
+}
+body {
+  background: url("../images/color7.png") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.header {
+  margin: 30px 0px;
+  color: black;
+}
+
+.crystal {
+  height: 120px;
+}
