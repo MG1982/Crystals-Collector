@@ -4,15 +4,12 @@ body h2 {
 }
 body {
   background: url("../images/color7.png") no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
   background-size: cover;
 }
 
 .header {
   margin: 30px 0px;
-  color: black;
+  color: rgb(26, 26, 26);
 }
 
 .crystal {
