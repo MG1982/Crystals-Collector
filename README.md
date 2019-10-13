@@ -13,7 +13,7 @@
 - JavaScript
 - Jquery
 
-## ![Screenshot of game](assets/images/screenShot.jpg)
+## ![Screenshot of game](/assets/images/screenshot.jpg)
 
 ## Game rules:
 
