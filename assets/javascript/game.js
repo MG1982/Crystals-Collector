@@ -22,6 +22,7 @@ $(document).ready(function() {
     console.log(crystal3);
     console.log(crystal4);
   }
+
   // NewGame / Reset function
   function newGame() {
     getRandomNumbers();
@@ -31,11 +32,8 @@ $(document).ready(function() {
     $("#wins").text(wins);
     $("#losses").text(losses);
     $("#message").text(message);
-    $("crystal1").attr(crystal1);
-    $("crystal2").attr(crystal2);
-    $("crystal3").attr(crystal3);
-    $("crystal4").attr(crystal4);
   }
+
   // Click functions for each crystal
   $("#crystal1").on("click", function() {
     totalScore += crystal1;
@@ -64,6 +62,7 @@ $(document).ready(function() {
     console.log(totalScore);
     winLose();
   });
+
   // Win or Lose check function
   function winLose() {
     if (totalScore === targetNumber) {
