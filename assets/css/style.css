@@ -1,17 +1,56 @@
-body h2 {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  color: rgb(63, 63, 63);
-}
 body {
   background: url("../images/color7.png") no-repeat center center fixed;
   background-size: cover;
+  font-family: "Times New Roman", Times, serif;
+  color: rgb(44, 44, 44);
+}
+
+h1 {
+  font-family: "Merienda One", cursive, Arial, Helvetica, sans-serif;
+  margin-bottom: 40px;
+  color: rgb(79, 135, 238);
+  font-weight: bold;
+  text-shadow: 3px 3px #636363;
+}
+
+h2 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  color: rgb(73, 73, 73);
+}
+
+p {
+  margin-bottom: 5px;
+}
+
+.wins-losses {
+  font-family: "Times New Roman", Times, serif;
+  color: rgb(44, 44, 44);
+  font-size: 20px;
 }
 
 .header {
-  margin: 30px 0px;
-  color: rgb(26, 26, 26);
+  margin: 60px 0px;
+}
+
+.col-lg-4 {
+  margin-top: 10px;
 }
 
 .crystal {
   height: 120px;
+  margin: 10px 0px;
+}
+
+#message {
+  font-size: 30px;
+}
+
+.instructions {
+  margin: 10px 0px;
+}
+
+.crystal:hover {
+  cursor: pointer;
+  opacity: 0.65;
 }

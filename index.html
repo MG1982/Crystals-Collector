@@ -19,7 +19,11 @@
     ></script>
     <!-- Game.js -->
     <script type="text/javascript" src="assets/javascript/game.js"></script>
-
+    <!-- Google font -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Merienda+One&display=swap"
+      rel="stylesheet"
+    />
     <!-- style.css -->
     <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
     <title>Crystals Collector</title>
@@ -27,7 +31,7 @@
   <body>
     <div class="bg">
       <div class="header text-center">
-        <h1>Crystals Collector</h1>
+        <h1>CRYSTALS COLLECTOR</h1>
         <h2>RANDOM NUMBER:</h2>
         <h2 id="target-number"></h2>
       </div>
@@ -73,18 +77,23 @@
             <p>
               Each crystal has a hidden value which is only revealed when
               clicked. Each click will add the crystal value to your total
-              score. If your total score matches the random number, you Win!. If
-              your total score exceeds the random number it will count as a
-              loss.
+              score.
+            </p>
+            <p>
+              If your total score matches the random number, you Win! If your
+              total score exceeds the random number it will count as a loss.
             </p>
           </div>
         </div>
         <div class="row text-center">
-          <div class="col-lg-6 total">
+          <div class="col-lg-4 total">
             <h3>TOTAL SCORE:</h3>
             <h3 id="total-score"></h3>
           </div>
-          <div class="col-lg-6 wins-loses">
+
+          <div class="col-lg-4"><br /><span id="message"></span></div>
+
+          <div class="col-lg-4 wins-losses">
             <p class="score">WINS: <span id="wins"></span></p>
             <p class="score">LOSSES: <span id="losses"></span></p>
           </div>

@@ -4,9 +4,10 @@ $(document).ready(function() {
   let crystal2;
   let crystal3;
   let crystal4;
-  let totalsore = 0;
+  let totalScore = 0;
   let wins = 0;
   let losses = 0;
+  let message;
 
   // Random number function
   function getRandomNumbers() {
@@ -21,10 +22,63 @@ $(document).ready(function() {
     console.log(crystal3);
     console.log(crystal4);
   }
-
+  // NewGame / Reset function
   function newGame() {
     getRandomNumbers();
-    totalsore = 0;
+    totalScore = 0;
+    $("#target-number").text(targetNumber);
+    $("#total-score").text(totalScore);
+    $("#wins").text(wins);
+    $("#losses").text(losses);
+    $("#message").text(message);
+    $("crystal1").attr(crystal1);
+    $("crystal2").attr(crystal2);
+    $("crystal3").attr(crystal3);
+    $("crystal4").attr(crystal4);
+  }
+  // Click functions for each crystal
+  $("#crystal1").on("click", function() {
+    totalScore += crystal1;
+    $("#total-score").text(totalScore);
+    console.log(totalScore);
+    winLose();
+  });
+
+  $("#crystal2").on("click", function() {
+    totalScore += crystal2;
+    $("#total-score").text(totalScore);
+    console.log(totalScore);
+    winLose();
+  });
+
+  $("#crystal3").on("click", function() {
+    totalScore += crystal3;
+    $("#total-score").text(totalScore);
+    console.log(totalScore);
+    winLose();
+  });
+
+  $("#crystal4").on("click", function() {
+    totalScore += crystal4;
+    $("#total-score").text(totalScore);
+    console.log(totalScore);
+    winLose();
+  });
+  // Win or Lose check function
+  function winLose() {
+    if (totalScore === targetNumber) {
+      $("#message").html(message);
+      wins++;
+      message = "YOU WIN! - PLAY AGAIN";
+      $("#wins").text(wins);
+      newGame();
+    } else if (totalScore > targetNumber) {
+      message = "YOU LOSE - TRY AGAIN";
+      $("#message").html(message);
+      losses++;
+      $("#losses").text(losses);
+      newGame();
+    }
   }
   newGame();
 });
