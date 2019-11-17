@@ -22,4 +22,4 @@
 
 ## link to play the game:
 
-https://mg1982.github.io/unit-4-game/
+https://mg1982.github.io/Crystals-Collector/index.html
