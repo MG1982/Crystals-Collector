@@ -1,8 +1,11 @@
 # CRYSTALS COLLECTOR GAME
 
-## UWA Full Stack Flex - Week 4 Homework Assignment
+## ![Screenshot of game](/assets/images/screenshot.jpg)
 
-## Option One:(Recommended)
+## Game rules:
+
+- Each crystal has a hidden value which is only revealed when clicked. Each click will add the crystal value to your total score.
+- If your total score matches the random number, you Win! If your total score exceeds the random number it will count as a loss.
 
 ## Built With;
 
@@ -12,13 +15,6 @@
 - Bootstrap
 - JavaScript
 - Jquery
-
-## ![Screenshot of game](/assets/images/screenshot.jpg)
-
-## Game rules:
-
-- Each crystal has a hidden value which is only revealed when clicked. Each click will add the crystal value to your total score.
-- If your total score matches the random number, you Win! If your total score exceeds the random number it will count as a loss.
 
 ## link to play the game:
 
